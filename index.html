@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Al-Fateha Weather Updates</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap added -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br>
+    <h1 class="text-center text-white">Al-Fateha Weather Updates</h1>
+    <div class="container">
+        
+        <!-- others info -->
+        <div>
+            <form class="col-md-6 m-auto py-4">
+                <div class="input-group mb-3">
+                    <input id="inputField" type="text" class="form-control" placeholder="Enter a city for Weather ...">
+                    <div class="input-group-append">
+                        <button onclick="loadCity()" type="button" class="btn btn-success">Search</button>
+                    </div>
+                    <!-- error messages  -->
+                    <div >
+                        <h2 id="allErrors"></h2>
+                    </div>
+                </div>
+            </form>
+            <div class="weather-status text-white text-center">
+                <img id="icon" src="" alt="">
+                <h1>City : <span id="cityName"></span> </h1>
+                <h3>Current Temperature : <span id="cityTemperature"></span>&deg;C</h3>
+                <h3>Minimum Temperature : <span id="minTemp"></span>&deg;C</h3>
+                <h3>Maximum Temperature : <span id="maxTemp"></span>&deg;C</h3>
+                <h3>Weather Condition : <span id="weatherCondition"></span> </h3>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
